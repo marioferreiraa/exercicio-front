@@ -1,0 +1,12 @@
+.person{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    h4{
+        position: absolute;
+        top: 60%;
+    }
+}

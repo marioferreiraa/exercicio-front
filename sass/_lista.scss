@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body.lista{
+    background: linear-gradient(to right, #24c482 0%,#23b6c2 100%);
+    font-family: 'lato', sans-serif;
+    .container.principal-div{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .session-table{
+            width: 100%;
+            .header-list{
+                color: #FFF;
+                text-align: center;
+                border-bottom: 3px solid #FFF;
+            }
+            .row-list{
+                color: #FFF;
+                text-align: center;
+            }
+            .paginacao{
+                text-align: center;
+                margin-top: 30px;
+                .btn-pag{
+                    display: inline;
+                    .btn-arrows{
+                        width: 100px;
+                        height: 40px;
+                        border-radius: 5px;
+                        color: #FFF;
+                        background-color: rgba(54, 34, 238, 0.377);
+                        border: none;
+                        outline: none;
+                        margin: 1%;
+                        &:disabled{
+                            background-color: #d4d3d3;
+                            color: #000;
+                            &:hover{
+                                box-shadow: none;
+                                cursor: not-allowed;
+                            }
+                        }
+                        &:hover{
+                            box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+                        }
+                    }
+                    .btn-numbers{
+                        height: 40px;
+                        width: 40px;
+                        background-color: greenyellow;
+                        border-radius: 50%;
+                        border: none;
+                        outline: none;
+                        margin: 1%;
+                        &:disabled{
+                            background-color: #d4d3d3;
+                            color: #000;
+                            &:hover{
+                                box-shadow: none;
+                                cursor: not-allowed;
+                            }
+                        }
+                        &:hover{
+                            box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
