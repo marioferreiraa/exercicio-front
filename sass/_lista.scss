@@ -13,14 +13,30 @@ body.lista{
         align-items: center;
         .session-table{
             width: 100%;
-            .header-list{
-                color: #FFF;
-                text-align: center;
-                border-bottom: 3px solid #FFF;
-            }
-            .row-list{
-                color: #FFF;
-                text-align: center;
+            .table-striped{
+                thead{
+                    a{
+                        color: #000;
+                        outline: none;
+                        text-decoration: none;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            background-image: url(../images/arrows.svg);
+                            width: 15px;
+                            height: 15px;
+                            display: block;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            float: left;
+                            margin-left: 3px;
+                            margin-top: 5px;
+                        }
+                        span{
+                            float: left;
+                        }
+                    }
+                }
             }
             .paginacao{
                 text-align: center;
